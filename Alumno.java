@@ -4,10 +4,15 @@ public class Alumno{
     
     public Alumno(String nomb, int clave){
         nombre = nomb;
-        clave = this.clave;
+        this.clave = clave;
     }
     
     public int dimeClave(){
         return clave;
+    }
+    
+    public String toString(){
+        String alumno = "Nombre: " + nombre + ", Clave: " + clave;
+        return alumno;
     }
 }
